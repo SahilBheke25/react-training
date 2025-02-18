@@ -8,10 +8,10 @@ type Todo = {
 };
 
 function TodoApp() {
+  
   const [title, setTitle] = useState<string>("");
   const [desc, setDesc] = useState<string>("");
   const [idCounter, setIdCounter] = useState(1); 
-
   const [taskList, setTaskList] = useState<Array<Todo>>([]);
 
   function handleAddTask(event: React.FormEvent) {
